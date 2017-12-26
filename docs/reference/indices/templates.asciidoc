@@ -43,12 +43,12 @@ PUT _template/template_1
 // CONSOLE
 // TESTSETUP
 
-NOTE: Index templates provide C-style /* */ block comments. Comments are allowed
+NOTE: Index templates allow the use of /* */ block comments. Comments are allowed
 everywhere in the JSON document except before the initial opening curly bracket. 
 
-Defines a template named `template_1`, with a template pattern of `te*`.
+Defines a template named `template_1`, with two template patterns of `te*` & `bar*`.
 The settings and mappings will be applied to any index name that matches
-the `te*` pattern.
+either pattern.
 
 It is also possible to include aliases in an index template as follows:
 
